@@ -1,4 +1,3 @@
-# === Main program ===
 import datetime
 
 from HW_7.mail_app.database_app import create_database, search_users, insert_user
