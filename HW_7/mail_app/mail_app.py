@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-# === Email functions ===
+# Email functions
 def send_email(user: User):
     """
     Sends a real email to the user via SMTP using environment variables.

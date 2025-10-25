@@ -5,6 +5,7 @@ from HW_7.mail_app.database_app import create_database, search_users, insert_use
 from HW_7.mail_app.mail_app import send_email_stub, send_email
 from HW_7.mail_app.user_app import User
 
+
 def input_user_data() -> User:
     """
     Prompts the user to input personal data and returns a User instance.
@@ -23,6 +24,7 @@ def input_user_data() -> User:
             print("❌ Invalid date format. Please use YYYY-MM-DD.")
 
     return User(first_name, last_name, patronymic, email, birth_date)
+
 
 # User registration
 def register_user(user: User, test_mode: bool = True):

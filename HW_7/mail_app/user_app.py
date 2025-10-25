@@ -47,4 +47,3 @@ class User:
         Returns a string representation of the user with full name and birth date.
         """
         return f"{self.get_full_name()}, born {self.birth_date}"
-

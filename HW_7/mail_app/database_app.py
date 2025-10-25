@@ -1,5 +1,5 @@
-import sqlite3
 import datetime
+import sqlite3
 
 from HW_7.mail_app.user_app import User
 
@@ -49,7 +49,8 @@ def insert_user(user: User):
     cursor.execute("""
         INSERT INTO users (first_name, last_name, patronymic, email, birth_date)
         VALUES (?, ?, ?, ?, ?)
-    """, (user.first_name, user.last_name, user.patronymic, user.email, user.birth_date.isoformat()))
+    """, (user.first_name, user.last_name, user.patronymic, user.email,
+          user.birth_date.isoformat()))
     conn.commit()
     conn.close()
     print(f"✅ User {user.get_full_name()} added to database.")
